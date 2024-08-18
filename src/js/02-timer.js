@@ -2,20 +2,17 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
-
 const startBtn = document.querySelector('button[data-start]');
 const days = document.querySelector('span[data-days]');
 const hours = document.querySelector('span[data-hours]');
 const mins = document.querySelector('span[data-minutes]');
 const secs = document.querySelector('span[data-seconds]');
 
-
 const addCSS = css =>
   (document.head.appendChild(document.createElement('style')).innerHTML = css);
 addCSS(
   '.timer{height:80vh;display:flex;justify-content:center;align-items:center;gap:30px;font-size:50px;}'
 );
-
 
 let interval;
 let today;
